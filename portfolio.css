@@ -35,7 +35,7 @@ h2 {
 	float: left;
 	margin: 20px 0 0 50px;
 }
-#wesewfine{}
+
 nav {
 	position: absolute;
 	right: 50px;
@@ -76,8 +76,8 @@ a:hover {
 
 #headerimg {
 	background:#333333;
-	background-image:url("images/Portfolio_FinalA.png");
-	height:8380px;
+	background-image:url("images/Portfolio_image.png");
+	height:500px;
 	margin:0 auto;
 }
 
@@ -87,8 +87,29 @@ article {
 	margin: 0 auto;
 	padding: 40px 0;
 }
+#appbutton {
+	width: 200px;
+	border: 2px solid #333;
+	
+	background-color: #e6e6e6;
+	padding: 10px;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	color: #333333;
+	letter-spacing: .01em;
+	font-style: normal;
+	font-weight: 400;
+	font-family: source-sans-pro, sans-serif;
+	margin: 50px auto;
+	transition: background-color, color 0.5s ease 0;
+}
 
-#saturnbaby {
+#appbutton:hover {
+	color: #eee;
+	background-color: #333;
+}
+#tiffin {
 	width: 100%;
 	float: left;
 	margin: 0px 0px 30px 50px;
@@ -157,7 +178,7 @@ p {
 	height: 500px;
 	width:100%;
 	background: #333333;
-	background-image:url()
+	background-image:url("images/Portfolio_image2.png");
 }
 
 #header2B {
@@ -208,7 +229,7 @@ p {
 	height:500px;
 	width:100%;
 	background: #333333;
-	background-image:url("images/Portfolio_image4.png")
+	background-image:url("images/Portfolio_image4.png");
 }
 
 #header3A {

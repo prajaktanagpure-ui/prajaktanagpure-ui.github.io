@@ -35,7 +35,7 @@ h2 {
 	float: left;
 	margin: 20px 0 0 50px;
 }
-#wesewfine{}
+
 nav {
 	position: absolute;
 	right: 50px;
@@ -76,8 +76,8 @@ a:hover {
 
 #headerimg {
 	background:#333333;
-	background-image:url("images/Portfolio_FinalA.png");
-	height:8380px;
+	background-image:url("images/Portfolio_FinalE.png");
+	height:4530px;
 	margin:0 auto;
 }
 
