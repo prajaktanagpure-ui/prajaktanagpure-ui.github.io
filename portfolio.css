@@ -357,3 +357,11 @@ button:hover {
 	border: 1px #DADADA;
 	color: #C43C3E;
 }
+
+@media (max-width:1024px){
+	
+	#wrapper {
+		margin: 20px;
+		height:90%;	
+	}
+}
