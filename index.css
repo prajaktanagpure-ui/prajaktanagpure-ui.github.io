@@ -2,29 +2,17 @@
 
 * {
 	margin:0;
-	padding:0; 
+	padding:0;
 }
 
-html, body {
+body {
 	margin: 0;
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	font-family: sans-serif;
 	background-color: #e6e6e6;
-	/*background-image: -webkit-linear-gradient(99deg, #000000 0%, #494848 100%);
-	background-image: -moz-linear-gradient(99deg, #000000 0%, #494848 100%);
-	background-image: -o-linear-gradient(99deg, #000000 0%, #494848 100%);
-	background-image: linear-gradient(-9deg, #000000 0%, #494848 100%);*/
 }
 
 #wrapper {
-	position: relative;
-	padding: 0;
+	padding: 0px;
 	margin: 0 auto;
-	/*background-image: url("images/background.jpg");*/
-	width: auto;
-	height: 550px;
 	max-width:1020px;
 }
 
@@ -85,14 +73,18 @@ a:hover {
 
 #content1 {
 	clear: both;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 #headerimg {
 	background-image:url("images/Photo_Prajakta.png");
 	background-color: #333333;
 	height:500px;
-	margin: 0;
-	padding: 0;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 #caption1 {
@@ -141,7 +133,7 @@ a:hover {
 	padding: 0;
 	margin: 0 auto;
 	text-align:center;*/
-	/*color:white;*/	
+	/*color:white;*/
 }
 
 #gallery h4 {
@@ -266,7 +258,7 @@ footer {
 }
 
 .footerList {
-	display: block;
+	display: inline-block;
 	clear: both;
 	width: 100%;
 	text-align: left;
@@ -334,9 +326,56 @@ button:hover {
 }
 
 @media (max-width:1024px){
-	
+
 	#wrapper {
 		margin: 20px;
-		height:90%;	
+		height:90%;
+	}
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	input {
+		width:100px;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	#prajakta{
+		margin: 5px 0 0 50px;
+	}
+	input {
+		width:100px;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
 	}
 }

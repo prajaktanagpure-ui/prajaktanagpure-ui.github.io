@@ -2,7 +2,7 @@
 
 * {
 	margin:0;
-	padding:0; 
+	padding:0;
 }
 
 body {
@@ -29,6 +29,7 @@ h2 {
 	color: #333333;
 	font-style:normal;
 	font-family: source-sans-pro, sans-serif;
+	font-size: 1.5em;
 }
 
 #prajakta {
@@ -45,6 +46,7 @@ nav {
 
 ul {
 	list-style-type: none;
+	display: flex;
 }
 
 li {
@@ -72,13 +74,18 @@ a:hover {
 
 #content1 {
 	clear: both;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 #headerimg {
 	background:#333333;
-	background-image:url("images/Portfolio_FinalE.png");
+	background-image:url("images/Portfolio_FInalE.png");
 	height:4530px;
-	margin:0 auto;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
 }
 
 article {
@@ -171,7 +178,7 @@ p {
 #morebutton {
 	width: 200px;
 	border: 2px solid #333;
-	
+
 	background-color: #e6e6e6;
 	padding: 10px;
 	text-align: center;
@@ -271,7 +278,7 @@ footer {
 }
 
 .footerList {
-	display: block;
+	display: inline-block;
 	clear: both;
 	width: 100%;
 	text-align: left;
@@ -335,4 +342,62 @@ button:hover {
 	background: #DADADA;
 	border: 1px #DADADA;
 	color: #C43C3E;
+}
+
+@media (max-width:1024px){
+
+	#wrapper {
+		margin: 20px;
+		height:90%;
+	}
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	input {
+		width:100px;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	#headerimg{
+		height:1470px;
+	}
+	#prajakta{
+		margin: 5px 0px 0px 50px;
+	}
+	input {
+		width:100px;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
 }

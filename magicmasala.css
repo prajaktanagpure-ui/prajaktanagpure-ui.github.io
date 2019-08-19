@@ -2,7 +2,7 @@
 
 * {
 	margin:0;
-	padding:0; 
+	padding:0;
 }
 
 body {
@@ -77,8 +77,11 @@ a:hover {
 #headerimg {
 	background:#333333;
 	background-image:url("images/Portfolio_FinalC.png");
+	background-repeat:no-repeat;
+	background-size:contain;
+	background-position:center;
 	height:4954px;
-	margin:0 auto;
+	/* margin:0 auto; */
 }
 
 article {
@@ -171,7 +174,7 @@ p {
 #morebutton {
 	width: 200px;
 	border: 2px solid #333;
-	
+
 	background-color: #e6e6e6;
 	padding: 10px;
 	text-align: center;
@@ -271,7 +274,7 @@ footer {
 }
 
 .footerList {
-	display: block;
+	display: inline-block;
 	clear: both;
 	width: 100%;
 	text-align: left;
@@ -335,4 +338,62 @@ button:hover {
 	background: #DADADA;
 	border: 1px #DADADA;
 	color: #C43C3E;
+}
+
+@media (max-width:1024px){
+
+	#wrapper {
+		margin: 10px;
+		height:90%;
+	}
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 100%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	input {
+		width:100px;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+	.footerList {
+		font-size: 1.0em;
+	}
+	#headerimg{
+		height:1720px;
+	}
+	#prajakta{
+		margin: 5px 0 0 50px;
+	}
+	input {
+		width:100px;
+	}
+	nav{
+		left: 40px;
+		top: 30px;
+		width: 93%;
+		font-size: 0.8em;
+	}
 }

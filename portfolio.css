@@ -2,7 +2,7 @@
 
 * {
 	margin:0;
-	padding:0; 
+	padding:0;
 }
 
 body {
@@ -29,6 +29,7 @@ h2 {
 	color: #333333;
 	font-style:normal;
 	font-family: source-sans-pro, sans-serif;
+	font-size: 1.5em;
 }
 
 #prajakta {
@@ -45,6 +46,7 @@ nav {
 
 ul {
 	list-style-type: none;
+	display: flex;
 }
 
 li {
@@ -72,25 +74,30 @@ a:hover {
 
 #content1 {
 	clear: both;
+	margin: 0;
+	width: 100%;
+	overflow: hidden;
 }
 
 #headerimg {
 	background:#333333;
 	background-image:url("images/Portfolio_image.png");
-	height:500px;
-	margin:0 auto;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	height: 500px;
 }
 
 article {
 	background: #fff;
 	height: 100%;
 	margin: 0 auto;
-	padding: 40px 0;
+	padding: 10px 0;
 }
 #appbutton {
 	width: 200px;
 	border: 2px solid #333;
-	
+
 	background-color: #e6e6e6;
 	padding: 10px;
 	text-align: center;
@@ -109,11 +116,13 @@ article {
 	color: #eee;
 	background-color: #333;
 }
+
 #tiffin {
 	width: 100%;
+	height: auto;
 	float: left;
 	margin: 0px 0px 30px 50px;
-	color:#333333;
+	color:#FF0000;
 }
 
 p {
@@ -144,20 +153,28 @@ p {
 
 #content2 {
 	margin: 20px auto;
+	clear: both;
+	width: 100%;
+	overflow: hidden;
 }
 
 #section2A {
 	float: left;
 	margin: 0;
-	width: 500px;
+	width: 100%;
 	overflow: hidden;
 }
 
 #img2A {
-	height:500px;
-	width:100%;
+
 	background: #333333;
 	background-image:url("images/Portfolio_image3.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	/* height: auto; */
+	height: 500px;
+	/* margin: 0 auto; */
 }
 
 #header2A {
@@ -170,15 +187,21 @@ p {
 #section2B {
 	float: right;
 	margin: 0;
-	width: 500px;
+	width: 100%;
 	overflow: hidden;
 }
 
 #img2B {
-	height: 500px;
-	width:100%;
+	/* height: 500px;
+	width:100%; */
 	background: #333333;
 	background-image:url("images/Portfolio_image2.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	/* height: auto; */
+	height: 500px;
+	/* margin: 0 auto; */
 }
 
 #header2B {
@@ -192,7 +215,7 @@ p {
 #morebutton {
 	width: 200px;
 	border: 2px solid #333;
-	
+
 	background-color: #e6e6e6;
 	padding: 10px;
 	text-align: center;
@@ -216,20 +239,32 @@ p {
 
 #content3 {
 	margin: 20px auto;
+	clear: both;
+	/* width: 100%
+	height: auto; */
+	/* margin: 0; */
+	width: 100%;
+	overflow: hidden;
 }
 
 #section3A {
 	float: left;
 	margin: 0;
-	width: 500px;
+	width: 100%;
 	overflow: hidden;
 }
 
 #img3A {
-	height:500px;
-	width:100%;
+	/* height:500px;
+	width:100%; */
 	background: #333333;
 	background-image:url("images/Portfolio_image4.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	/* height: auto; */
+	height: 500px;
+	/* margin: 0 auto; */
 }
 
 #header3A {
@@ -242,15 +277,21 @@ p {
 #section3B {
 	float: right;
 	margin: 0;
-	width: 500px;
+	width: 100%;
 	overflow: hidden;
 }
 
 #img3B {
-	height: 500px;
-	width:100%;
+	/* height: 500px;
+	width:100%; */
 	background: #333333;
 	background-image:url("images/Portfolio_image5.png");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	/* height: auto; */
+	height: 500px;
+	/* margin: 0 auto; */
 }
 
 #header3B {
@@ -292,7 +333,7 @@ footer {
 }
 
 .footerList {
-	display: block;
+	display: inline-block;
 	clear: both;
 	width: 100%;
 	text-align: left;
@@ -304,7 +345,7 @@ footer {
 	color: #333333;
 	letter-spacing: .02em;
 	font-style: normal;
-	font-weight: 300;
+	font-weight: 150;
 	font-family: source-sans-pro, sans-serif;
 	margin: 0 0 0 50px;
 }
@@ -359,26 +400,56 @@ button:hover {
 }
 
 @media (max-width:1024px){
-	
+
 	#wrapper {
-		margin: 20px;
-		height:90%;	
+		margin: 10px;
+		height:90%;
 	}
 }
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
-    width: 80%;
+    width: 100%;
     padding: 0;
   }
   .right {
     width: 100%;
   }
+	.footerList {
+		font-size: 1.0em;
+	}
+	input {
+		width:100px;
+	}
+	h2 {
+		font-size: 1.3em;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
   .menu, .main, .right {
     width: 100%;
   }
+	.footerList {
+		font-size: 1.0em;
+	}
+	#prajakta{
+		margin: 5px 0 0 50px;
+	}
+	input {
+		width:100px;
+	}
+	nav{
+		left: 40px;
+		top: 40px;
+		width: 93%;
+		font-size: 0.8em;
+	}
 }
