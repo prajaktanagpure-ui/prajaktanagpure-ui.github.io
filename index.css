@@ -38,13 +38,14 @@ h2 {
 
 nav {
 	position: absolute;
-	right: 50px;
-	top: 20px;
-	width: 33%;
+	right: 10px;
+	top: 18px;
+	width: 50%;
 }
 
 ul {
 	list-style-type: none;
+    display: flex;
 }
 
 li {
