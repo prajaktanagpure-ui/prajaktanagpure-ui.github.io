@@ -403,6 +403,14 @@ button:hover {
 	color: #C43C3E;
 }
 
+footer {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #BABABA;
+	color: white;
+	font-size: 0.8em;
+	text-align: center;
+}
 @media (max-width:1024px){
 
 	#wrapper {
